@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALBA Resto & Cafe Menu</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fdfbf7;
+        color: #2b2b2b;
+        padding: 40px 20px;
+      }
+
+      .menu-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 2px solid #dfba6b;
+        padding: 50px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        border-radius: 6px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+      }
+
+      .logo-img {
+        width: 160px;
+        height: auto;
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+
+      .header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 42px;
+        color: #c49a45;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        font-weight: 700;
+      }
+
+      .header p {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #777;
+        margin-top: 5px;
+      }
+
+      .header::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: #dfba6b;
+        margin: 20px auto 0 auto;
+      }
+
+      /* 🛠️ Mnesta3mel block kermil l-section title wal-grid ma yen2atsho */
+      .menu-section {
+        /* page-break-inside: avoid; */
+        /* break-inside: avoid; */
+        margin-bottom: 30px;
+      }
+
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        color: #a0792a;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 15px 0 20px 0;
+        border-bottom: 1px dashed #dfba6b;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 40px;
+      }
+
+      /* 🛠️ Bmna3 any an2itash la-ayyi akle m3a l-ingredients taba3a */
+      .menu-item-wrapper {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+      }
+
+      .item-name {
+        font-weight: 600;
+        font-size: 15px;
+        color: #333;
+      }
+
+      .item-dots {
+        flex-grow: 1;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 10px;
+        position: relative;
+        top: -4px;
+      }
+
+      .item-price {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        color: #c49a45;
+        font-size: 16px;
+      }
+
+      .sub-category {
+        grid-column: 1 / -1;
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        color: #555;
+        font-style: italic;
+        margin: 10px 0 5px 0;
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      .item-ingredients {
+        font-size: 12px;
+        color: #666;
+        font-style: italic;
+        margin-top: 2px;
+        max-width: 90%;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 12px;
+        color: #999;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-top: 1px solid #dfba6b;
+        padding-top: 20px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .protein-tag {
+        font-size: 13px;
+        font-weight: 700;
+        color: #d4af37;
+        margin: 3px 0 6px;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 768px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        .menu-container {
+          padding: 20px;
+        }
+      }
+
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+        }
+        .menu-container {
+          box-shadow: none;
+          border: 1px solid #dfba6b;
+          padding: 30px;
+        }
+        /* 🛠️ Eza fi category kbiire baddak yaha tballesh fawran bi-safha jdidé, fyak t-hasta3mel hal-class */
+        .force-page-break {
+          page-break-before: always;
+          break-before: page;
+        }
+        @page {
+          size: auto;
+          margin: 15mm 10mm; /* Mna3te space kermil ma ye2rob 3al hwaf */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="header">
+        <img
+          class="logo-img"
+          src="WhatsApp Image 2026-05-04 at 3.06.17 PM.jpeg"
+          alt="ALBA Logo"
+        />
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Starters</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Nachos ناتشوز</span
+              ><span class="item-dots"></span
+              ><span class="item-price">6.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Chips topped with cheese, served with guacamole and salsa
+              <br />
+              شرائح البطاطا مغطاة بالجبنة، تُقدّم مع الغواكامولي وصلصة السالسا
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Garlic bread with cheese خبز بالثوم والجبنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Baguette topped with garlic, cheese, oregano
+              <br />
+              باغيت مغطى بالثوم والجبنة والأوريغانو
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >French toast (salt sweet) توست فرنسي (مالح/حلو)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Pain de mie toast toped of your choice
+              <br />
+              توست بين دو مي مع اختيارك من الإضافات
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Pain de mie pizza بيتزا بين دو مي</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Homemade sauce with pepperoni or vegi
+              <br />
+              صلصة منزلية مع ببروني أو خضار
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Grilled halloumi sticks with vegetables حلوم مشوية مع
+                خضار</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Cube halloumi grilled served on sticks with tomato, olive, basil,
+              pesto sauce
+              <br />
+              مكعبات حلوم مشوية على أعواد مع طماطم، زيتون، ريحان، صلصة بيستو
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Salads</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Chicken Caesar salad سلطة سيزر بالدجاج</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Romaine lettuce, crouton, grilled chicken
+              <br />
+              خس ، خبز محمص، دجاج مشوي
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Green nuts salad سلطة خضراء بالمكسرات وفواكه مجففة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">8.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Mix of greens, dry fruit, mix nuts
+              <br />
+              خليط من الخضار، فواكه مجففة، مكسرات مشكلة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Quinoa avocado salad سلطة كينوا وأفوكادو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">8.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Quinoa, avocado, cucumber, green pepper
+              <br />
+              كينوا، أفوكادو، خيار، فليفلة خضراء
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Crab salad سلطة السلطعون</span
+              ><span class="item-dots"></span
+              ><span class="item-price">10.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Glass noodles with crab, cucumber, carrot, crispy noodles
+              <br />
+              نودلز زجاجية مع سلطعون، خيار، جزر، نودلز مقرمشة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Quinoa avocado shrimpers salad سلطة كينوا وأفوكادو مع
+                روبيان</span
+              ><span class="item-dots"></span
+              ><span class="item-price">11.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Quinoa, avocado, cucumber, green pepper with shrimps
+              <br />
+              كينوا، أفوكادو، خيار، فليفلة خضراء مع روبيان
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Bakery & Breakfast</div>
+        <div class="grid-2">
+          <div class="sub-category">Croissants</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">cheese جبنة </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Cucumber, Tomato, Olives
+              <br />
+              خيار، طماطم، زيتون
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Chocolate شوكولاتة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+            <div class="item-ingredients">
+              With chocolate sauce
+              <br />
+              مع صوص الشوكولاتة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Peanut butter زبدة الفول السوداني</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Peanut, banana, honey
+              <br />
+              فول سوداني، موز، عسل
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"> smoked Turkey cheese ديك رومي وجبنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Turkey, cheese, special sauce, lettuce, pickles
+              <br />
+              ديك رومي، جبنة، صلصة خاصة، خس، مخلل
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Egg bacon بيض مع لحم مقدد</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Scrambled or fried egg with crispy bacon
+              <br />
+              بيض مخفوق أو مقلي مع لحم مقدد مقرمش
+            </div>
+          </div>
+
+          <div class="sub-category">Bagels</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Eggs cheese بيض وجبنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Egg, cheese, lettuce
+
+              <br />
+              بيض، جبنة، خس
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Smoked salmon سلمون مدخن</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Cream cheese, lemon zest, smoked salmon
+              <br />
+              جبنة كريمية، قشر ليمون، سلمون مدخن
+
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Sandwiches & Tacos</div>
+        <div class="grid-2">
+          <div class="sub-category">Sandwich (3 pieces)</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Roast beef روست بيف</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Roast beef, tomato, pickles, mustard, mayo
+              <br />
+              روست بيف، طماطم، مخلل، خردل، مايونيز
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Chicken avocado دجاج مع أفوكادو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Chicken, avocado, white sauce, lettuce
+              <br />
+              دجاج، أفوكادو، صلصة بيضاء، خس
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Turkey cheese ديك رومي وجبنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Turkey, cheese, special sauce, pickles, lettuce
+              <br />
+              ديك رومي، جبنة، صلصة خاصة، مخلل، خس
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Halloumi pestoحلوم مع معجول حبق </span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Grilled halloumi with rich pesto sauce
+              <br />
+              حلوم مشوي مع صلصة بيستو غنية
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Crab sandwich ساندويش سلطعون</span
+              ><span class="item-dots"></span
+              ><span class="item-price">8.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Crab, lettuce, special sauce
+              <br />
+              سلطعون، خس، صلصة خاصة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Club sandwich كلوب ساندويش</span
+              ><span class="item-dots"></span
+              ><span class="item-price">8.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Pain de mie stuffed with turkey, cheese, tomato, pickles, lettuce,
+              served with chips
+              <br />
+              توست بين دو مي محشو بديك رومي، جبنة، طماطم، مخلل، خس， يُقدّم مع
+              شرائح البطاطا
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Shrimp avocado روبيان مع أفوكادو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">10.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Shrimps, avocado sauce
+              <br />
+              روبيان، صلصة أفوكادو
+            </div>
+          </div>
+
+          <div class="sub-category">Alba Specials</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Jumbo jack potato بطاطا جامبو جاك</span
+              ><span class="item-dots"></span
+              ><span class="item-price">9.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Baked potato mix with cheese, butter, corn, pickles, side sauce
+              <br />
+              بطاطا مخبوزة مع جبنة، زبدة، ذرة، مخلل، صلصة جانبية
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Beef tacos (3 pieces)تاكو لحم بقر</span
+              ><span class="item-dots"></span
+              ><span class="item-price">11.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Minced beef Mexican style, served with guacamole and salsa
+              <br />
+              لحم بقر مفروم على الطريقة المكسيكية، يُقدّم مع غواكامولي وسالسا
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Shrimp tacos (3 pieces) تاكو روبيان</span
+              ><span class="item-dots"></span
+              ><span class="item-price">13.00$</span>
+            </div>
+            <div class="item-ingredients">
+              Mexican style shrimps, lettuce, served with guacamole and salsa
+              <br />
+              روبيان على الطريقة المكسيكية، خس، يُقدّم مع غواكامولي وسالسا
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Chicken & Mash Deluxe دجاج ومهروس البطاطا ديلوكس</span
+              ><span class="item-dots"></span
+              ><span class="item-price">12.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 73–78g</div>
+            <div class="item-ingredients">
+              Creamy mushroom and spinach chicken with smashed potato and
+              grilled vegetables
+              <br />
+              دجاج بصلصة كريمية مع الفطر والسبانخ، يقدم مع البطاطا المهروس
+              والخضار المشوية
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">
+          Sour Dow (2 pieces) خبز الساويردو (قطعتان)
+        </div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >salmon cream cheese سالمون مع جبنة كريمية</span
+              ><span class="item-dots"></span>
+              <span class="item-price">10.00$</span>
+            </div>
+            <div class="item-ingredients">Salmon, cream cheese</div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Turkey Cheese حبش (تيركي) مع جبنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+            <div class="item-ingredients">
+              Turkey cheese, special sauce, pickles, lettuce جبنة ديك رومي، صوص
+              خاص، مخلل، خس
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Golden Grains</div>
+        <div class="grid-2">
+          <div class="sub-category">Healthy Bowls</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Date protein oats شوفان بالتمر والبروتين
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 20–25g</div>
+            <div class="item-ingredients">
+              Oats, dates, banana, honey, milk, protein powder <br />
+              بروتين باودر، شوفان، تمر، موز، عسل، حليب
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Apple peanut granola جرانولا التفاح والفول السوداني
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">7.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 40–43g</div>
+            <div class="item-ingredients">
+              Granola, apple, peanut butter, cinnamon, honey <br />
+              جرانولا، تفاح، زبدة الفول السوداني، قرفة، عسل
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Natty kiwi oat bowl شوفان الكيوي الطبيعي
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">8.50$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 35–40g</div>
+            <div class="item-ingredients">
+              Oats, kiwi, yogurt, chia seeds, honey, nuts, milk, almonds,
+              walnuts<br />شوفان، كيوي، لبن، بذور الشيا، عسل، مكسرات، حليب، لوز،
+              جوز
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Berry crunch granola جرانولا التوت المقرمشة
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 31–33g</div>
+            <div class="item-ingredients">
+              Granola, mixed berries, yogurt, nuts, honey <br />
+              جرانولا، توت مشكل، لبن، مكسرات، عسل
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Tropical mango granola جرانولا المانجو الاستوائية
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 33–35g</div>
+            <div class="item-ingredients">
+              Granola, mango, coconut flakes, yogurt, honey <br />
+              جرانولا، مانجو،برش جوز هند، لبن، عسل
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Berry chia crunch توت مع بذور الشيا المقرمشة
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 31–33.8g</div>
+            <div class="item-ingredients">
+              Berries, chia seeds, granola, yogurt, honey, milk <br />
+              توت، بذور الشيا، جرانولا، لبن، عسل، حليب
+            </div>
+          </div>
+
+          <div class="sub-category">Healthy Pancakes</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"> Banana oats شوفان بالموز </span>
+              <span class="item-dots"></span>
+              <span class="item-price">6.50$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 18–20g</div>
+            <div class="item-ingredients">
+              Oats, banana, honey, milk, cinnamon <br />
+              شوفان، موز، عسل، حليب، قرفة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >High Protein Banana Oats شوفان بالموز عالي البروتين</span
+              >
+              <span class="item-dots"></span>
+              <span class="item-price">8.50$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 34–36g</div>
+            <div class="item-ingredients">
+              Oats, banana, honey, milk, cinnamon , protein powder<br />
+              بروتين باودر، شوفان، موز، عسل، حليب، قرفة
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"> Apple cinnamon تفاح مع قرفة </span>
+              <span class="item-dots"></span>
+              <span class="item-price">6.50$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 18–20g</div>
+            <div class="item-ingredients">
+              Apple, cinnamon, oats, honey, milk <br />
+              تفاح، قرفة، شوفان، عسل، حليب
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                high protein Apple cinnamon تفاح بالقرفة عالي البروتين</span
+              >
+              <span class="item-dots"></span>
+              <span class="item-price">8.50$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 34–36g</div>
+            <div class="item-ingredients">
+              Apple, cinnamon, oats, honey, milk , protein powder <br />
+              بروتين باودر، تفاح، قرفة، شوفان، عسل، حليب
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                Strawberry peanut butter زبدة الفول السوداني مع الفراولة
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">7.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 30–32g</div>
+            <div class="item-ingredients">
+              Strawberry, peanut butter, oats, honey, milk <br />
+              فراولة، زبدة الفول السوداني، شوفان، عسل، حليب
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">
+                High protein strawberry peanut butter زبدة الفول السوداني مع
+                الفراولة عالي البروتي
+              </span>
+              <span class="item-dots"></span>
+              <span class="item-price">9.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 46–48g</div>
+            <div class="item-ingredients">
+              Strawberry, peanut butter, oats, honey, milk , protein powder
+              <br />
+              بروتين باودر، فراولة، زبدة الفول السوداني، شوفان، عسل، حليب
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-section">
+        <div class="section-title">Desserts</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Ice cream brownie براوني مع آيس كريم</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Alba ice cream آيس كريم ألبا</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Arabic pistachio ice cream (with cotton candy) بوظة عربية
+                بالفستق (مع غزل البنات)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.50$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Affogato float أفوغاتو فلوات</span
+              ><span class="item-dots"></span
+              ><span class="item-price">6.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Lemon with jarank ice cream آيس كريم ليمون مع جرنك</span
+              ><span class="item-dots"></span
+              ><span class="item-price">6.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Low Sugar Chocolate Muffin مفن بالشكولا سكر خفيف </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Low Sugar Vanille Muffin مفن بالفانيليا سكر خفيف </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Cookie كعكة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Croissant كرواسون</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.50$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">ALBA Special Drink</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">V60 Coffee قهوة V60</span>
+              <span class="item-dots"></span>
+              <span class="item-price">4.50$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">ALBA Butterfly Tea شاي الفراشة ألبا</span>
+              <span class="item-dots"></span>
+              <span class="item-price">5.50$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Hot Beverages المشروبات الساخنة</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Espresso إسبريسو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.50$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Americano أمريكانو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Cappuccino كابتشينو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Café Latte كافيه لاتيه</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Carmel Macchiato كراميل ماكياتو</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Matcha (with flavor’s) ماتشا (مع نكهات)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Flat White فلات وايت</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Hot Chocolate شوكولاتة ساخنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Hot Chocolate Light شوكولاتة ساخنة لايت</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >White or Dark Chocolate Mocha موكا شوكولاتة بيضاء أو
+                داكنة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Spanish Latte سبانيش لاتيه</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Turkish Coffee قهوة تركية</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Turkish Tea شاي تركي</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Black Tea شاي أسود</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Green tea شاي أخضر</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Ginger & Lemon زنجبيل وليمون</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Cinnamon قرفة</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Herbal أعشاب</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Iced Drinks & Frappuccinos</div>
+        <div class="grid-2">
+          <div class="sub-category">Iced Beverages</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Americano</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced latte </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Spanish Latte </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Vanilla Latte </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Mocha </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Tea / Zero </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Carmel Macchiato </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Matcha </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Matcha With Flavor</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Cappuccino </span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Chocolate (White/Dark) </span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Iced Double Shot Espresso Shake</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Frappuccinos</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Double Carmel frapp </span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">White / dark Mocha Frapp </span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Coffee frapp </span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Matcha frapp </span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Oreo frapp </span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+
+          <!-- Zed hayda tahet Soft Drinks & Water aw 2abel Cafe Specials -->
+
+          <div class="sub-category">Beer</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Almaza</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Almaza Light</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Beirut Beer</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Corona</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Mexican Beer</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Add Extra Charge (Nuts / Chips / Carrot)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.50$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Wine</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">White Wine • 750ml Bottle</span
+              ><span class="item-dots"></span
+              ><span class="item-price">15.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Red Wine Ksara • 750ml Bottle</span
+              ><span class="item-dots"></span
+              ><span class="item-price">15.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Rosé Wine • 750ml Bottle</span
+              ><span class="item-dots"></span
+              ><span class="item-price">15.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Energy Drinks</div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Red Bull</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Red Bull Light</span
+              ><span class="item-dots"></span
+              ><span class="item-price">4.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Bombom</span
+              ><span class="item-dots"></span
+              ><span class="item-price">2.00$</span>
+            </div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">XXL</span><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">High Protein Smoothies</div>
+        <div class="grid-2">
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Protein Berry Smoothie سموذي توت عالي البروتين</span
+              >
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 25–27g</div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Protein Mango Oats Smoothie سموذي مانجو بالشوفان</span
+              >
+              <span class="item-dots"></span>
+              <span class="item-price">8.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 30–35g</div>
+          </div>
+
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Grambo Special Smoothie سموذي غرامبو الخاص</span
+              >
+              <span class="item-dots"></span>
+              <span class="item-price">9.00$</span>
+            </div>
+            <div class="protein-tag">💪 Protein: 30–34g</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Juices, Smoothies & Shakes</div>
+        <div class="grid-2">
+          <div class="sub-category">Fresh Juices</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Orange / Strawberry / Lemonade / Carrot</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Mango / Guava / Carrot Orange</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Smoothies</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Strawberry / Strawberry & Banana / Mix Berry / Mango /
+                Passion</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Avocado Smoothie</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.50$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Milkshakes</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Chocolate / Avocado / Strawberry / Oreo / Lotus Milkshake</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Cocktails & Mocktails</div>
+        <div class="grid-2">
+          <div class="sub-category">Premium Cocktails</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Fruit Cocktail</span
+              ><span class="item-dots"></span
+              ><span class="item-price">10.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Avocado & Qashta & Honey</span
+              ><span class="item-dots"></span
+              ><span class="item-price">12.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Refreshing Mocktails</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Passion fruit mojito</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Virgin mojito</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Classic mojito</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Cranberry mojito</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Mellow mango</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Passion fruit madness</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Blue romarita</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Agave margarita</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Pinacolada</span
+              ><span class="item-dots"></span
+              ><span class="item-price">7.00$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <div class="section-title">Bar, Shisha & Matte</div>
+        <div class="grid-2">
+          <div class="sub-category">Soft Drinks & Water</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Water (Small)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">0.50$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Water (Large)</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Pepsi /Pepsi dark/ 7Up / Miranda</span
+              ><span class="item-dots"></span
+              ><span class="item-price">1.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Perrier</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Cafe Specials</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Matte</span><span class="item-dots"></span
+              ><span class="item-price">5.00$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Matte with Nuts</span
+              ><span class="item-dots"></span
+              ><span class="item-price">8.00$</span>
+            </div>
+          </div>
+
+          <div class="sub-category">Shisha</div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name"
+                >Double apple/Blue berry/ Mint lemon/ Lemon & gum/ Grape/
+                Love</span
+              ><span class="item-dots"></span
+              ><span class="item-price">5.50$</span>
+            </div>
+          </div>
+          <div class="menu-item-wrapper">
+            <div class="menu-item">
+              <span class="item-name">Head change</span
+              ><span class="item-dots"></span
+              ><span class="item-price">3.50$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">Thank you for visiting ALBA Resto & Cafe</div>
+    </div>
+  </body>
+</html>
